@@ -1,0 +1,10 @@
+{
+  "theme": "govUK",
+  "routes": [
+    "./apps/demo-app"
+  ],
+  "session": {
+    "name": "demo-app.hof.sid"
+  },
+  "behaviours": []
+}

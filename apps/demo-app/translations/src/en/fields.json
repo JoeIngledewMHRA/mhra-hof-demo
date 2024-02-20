@@ -1,0 +1,59 @@
+{
+  "person-name": {
+    "legend": "What is your name?",
+    "validation": {
+      "required": "Enter your full name",
+      "maxlength": "Enter less than 51 characters"
+    }
+  },
+  "language-radio": {
+    "legend": "What is your favourite programming language?",
+    "options": {
+      "javascript": {
+        "label": "JavaScript"
+      },
+      "typescript": {
+        "label": "TypeScript"
+      },
+      "java": {
+        "label": "Java"
+      },
+      "rust": {
+        "label": "Rust 🦀"
+      },
+      "go": {
+        "label": "Go"
+      }
+    },
+    "validation": {
+      "required": "Select an option"
+    }
+  },
+  "build-tool-checkbox": {
+    "legend": "What is your preferred Java build tool?",
+    "options": {
+      "make": {
+        "label": "Make"
+      },
+      "gradle": {
+        "label": "Gradle"
+      },
+      "maven": {
+        "label": "Maven"
+      },
+      "ant": {
+        "label": "Ant"
+      }
+    },
+    "validaton": {
+      "required": "Select at least one option"
+    }
+  },
+  "textarea": {
+    "legend": "Write something",
+    "validation": {
+      "required": "Enter at least one word",
+      "maxword": "Enter no more than 50 words"
+    }
+  }
+}

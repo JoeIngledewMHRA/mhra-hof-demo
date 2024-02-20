@@ -1,0 +1,168 @@
+@import "hof/frontend/themes/gov-uk/styles/govuk";
+
+.phase-banner {
+  @include phase-banner(alpha);
+}
+
+ul {
+  @extend .list-bullet;
+}
+
+a {
+  @extend .govuk-link;
+}
+
+details {
+  margin-bottom: $gutter;
+
+  .panel-indent {
+    margin-bottom: $gutter-half;
+  }
+}
+
+textarea.form-control {
+  @extend .form-control-3-4;
+}
+
+// styles for rh column borrowed from govuk prototype kit
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  h2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.table-details {
+  th, td {
+    vertical-align: top;
+  }
+  th {
+    font-weight: bold;
+  }
+}
+
+#step {
+  @include core-16;
+
+  span {
+    display: inline-block;
+    margin-top: $gutter-half;
+    color: $secondary-text-colour;
+  }
+}
+
+.link-margin {
+  margin-top: 2em;
+}
+
+.js-enabled .file-upload {
+  @extend .visuallyhidden;
+}
+
+.image-thumb {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid $panel-colour;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.govuk-warning-text__icon {
+    font-family: "GDS Transport",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    min-width: 29px;
+    min-height: 29px;
+    margin-top: -7px;
+    border: 3px solid #0b0c0c;
+    border-radius: 50%;
+    color: #fff;
+    background: #0b0c0c;
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.govuk-warning-text__text {
+    font-family: "GDS Transport",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+
+    line-height: 1.25;
+    color: #0b0c0c;
+    display: block;
+    padding-left: 45px;
+}
+
+.govuk-warning-text {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+.govuk-inset-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #0b0c0c;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    border-left: 10px solid #b1b4b6;
+}
+
+// stying upload input
+#image {
+    padding: 30px;
+    background-color: #f3f2f1;
+    border: none;
+    width: 100%;
+    text-align: center;
+  }
+
+// fixing tab sizes
+.govuk-tabs__tab {
+  font-size: 19px;
+}
+
+.source-help {
+  max-width: 75%;
+}
+
+.repeater {
+  .govuk-form-group {
+    margin-bottom: 0;
+  }
+  .govuk-textarea {
+    width: 82%;
+  }
+  .remove {
+    float: right;
+    // to position the anchor next to the textarea
+    margin-top: -61px;
+  }
+}
+
+// this is no longer out of the box with hof so added custom css
+.hidden {
+  display: none
+}
